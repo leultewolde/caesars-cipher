@@ -2,7 +2,7 @@ package com.leultewolde;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CaesarsCipherTest {
 
@@ -16,5 +16,10 @@ class CaesarsCipherTest {
     @Test
     void testEmptyString() {
         assertEquals("", caesarsCipher.cipher("", 12));
+    }
+
+    @Test
+    void testCipheredMessageWithOffsetOf11() {
+        assertEquals("szh lcp jzf oztyr ezolj", caesarsCipher.cipher("how are you doing today", 11));
     }
 }
