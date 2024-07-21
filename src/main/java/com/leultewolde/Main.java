@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         String message = "how are you doing today";
-        int offset = 12;
+        int offset = 11;
 
         CaesarsCipher caesarsCipher = new CaesarsCipher();
         String result = caesarsCipher.cipher(message, offset);
